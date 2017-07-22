@@ -1,0 +1,32 @@
+version: "3"
+services:
+    web:
+        image: mejta/docker-php:7.1-apache
+        environment:
+            DOCUMENT_ROOT: /var/www/html/public
+        ports:
+            - 80:80
+        volumes:
+            - .:/var/www/html
+    database:
+        image: mysql:8.0
+        environment:
+            MYSQL_ROOT_PASSWORD: M6rqkRAv3fWc
+            MYSQL_DATABASE: mejtanet
+            MYSQL_USER: mejtanet
+            MYSQL_PASSWORD: fFbGg7p4Gwgk
+        ports:
+            - 3306:3306
+        volumes:
+            - ./storage/database:/var/lib/mysql
+    redis:
+        image: redis:3.0
+    adminer:
+        image: adminer:latest
+        ports:
+            - 81:8080
+    postfix:
+        image: catatnight/postfix:latest
+        environment:
+            maildomain: localhost
+            smtp_user: username@localhost:password

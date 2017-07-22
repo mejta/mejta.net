@@ -1,0 +1,99 @@
+.lang {
+    &__toggle {
+        @include offscreen;
+        position: absolute;
+        left: -10em;
+    }
+    
+    @include screen-max(xs) {
+        ul {
+            display: inline-block;
+
+            li {
+                display: inline-block;
+            }
+
+            li:first-of-type:after {
+                content: "|";
+                color: $color-white;
+                padding: 0 10px 0 14px;
+            }
+        }
+    }
+
+    @include screen-min(xs) {
+        position: relative;
+        background: $color-violet;
+        color: $color-white;
+        border-radius: 20px;
+        font-size: 0.875rem;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            display: block;
+
+            li {
+                font-family: $font-heading;
+                text-transform: uppercase;
+                height: 0;
+                opacity: 0;
+                overflow: hidden;
+                @include transition;
+
+                a {
+                    display: block;
+                    color: $color-white;
+                    text-decoration: none;
+                    padding: 1em;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            li.active {
+                height: 3.1em;
+                opacity: 1;
+
+                a {
+                    padding-right: 3em;
+                }
+            }
+        }
+
+        ul:after {
+            content: "▼";
+            position: absolute;
+            right: 1em;
+            top: 1.2em;
+            font-size: 90%;
+        }
+
+        &__toggle:checked ~ ul li {
+            height: 3.1em;
+            opacity: 1;
+        }
+
+        &__toggle:checked ~ ul:after {
+            content: "▲";
+        }
+
+        label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            cursor: pointer;
+        }
+
+        &__toggle:checked ~ label {
+            left: auto;
+            width: 2.5em;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+$font-default: 'Maitree', serif;
+$font-heading: 'Raleway', sans-serif;
+
+$color-white: rgba(255,255,255,1);
+$color-violet: rgba(97,16,179,1);
+$color-grey: rgba(54,54,54,1);
+$color-yellow: rgba(255,225,83,1);
+$color-turquoise: rgba(0,184,192,1);
+$color-pink: rgba(246,105,129,1);
+$color-red: rgba(255, 0, 0, 1);
+$color-black: rgba(0, 0, 0, 1);
+$layer-header: 10000;
+$layer-menu: $layer-header - 1000;

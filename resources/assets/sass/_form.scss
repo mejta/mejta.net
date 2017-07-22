@@ -1,0 +1,121 @@
+.form {
+    position: relative;
+    margin: 0 0 42px 0;
+
+    &__label {
+        @include position(absolute, -1em, 0px, auto, 0px);
+        @include transition;
+        display: block;
+        width: 100%;
+        font-size: 1em;
+        font-weight: 200;
+    }
+
+    textarea {
+        resize: vertical;
+        overflow: auto;
+    }
+
+    &__control {
+        @include transition;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $color-violet;
+        color: lighten($color-grey, 30%);
+        padding: 8px 8px 8px 0;
+        margin: calc(16px + 1em) 0 8px 0;
+        font: 1.2em/120% $font-heading;
+
+        &:focus {
+            outline: none;
+            padding: 8px 8px 6px 0;
+            border-bottom: 3px solid $color-violet;
+            color: $color-grey;
+        }
+    }
+
+    &__group {
+        position: relative;
+
+        &--empty {
+            .form__label {
+                font-size: 1.2em;
+                margin-top: calc(1em + 8px);
+            }
+        }
+
+        &--active {
+            .form__label {
+                color: $color-violet;
+                font-size: 1em;
+                margin-top: 0;
+            }
+        }
+
+        &--error {
+            .form__label {
+                color: $color-red;
+                font-size: 1em;
+                margin-top: 0;
+            }
+
+            .form__control {
+                border-bottom-color: $color-red;
+            }
+        }
+    }
+
+    &__helper {
+        font-size: 0.9em;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: block;
+        }
+
+        &--error {
+            color: $color-red;
+        }
+    }
+
+    &__button {
+        padding: 42px 0 0 0;
+        text-align: right;
+    }
+    
+    &__asterisk {
+        color: $color-red;
+    }
+
+    &__alert {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        bottom: -10px;
+        left: -10px;
+        background: rgba(0,0,0,0.75);
+        color: $color-white;
+        font-size: 200%;
+        cursor: pointer;
+        display: flex;
+
+        p {
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+        .icon {
+            width: 48px;
+            height: 48px;
+            display: inline-block;
+            margin-top: 16px;
+        }
+    }
+}

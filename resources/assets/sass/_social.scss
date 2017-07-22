@@ -1,0 +1,116 @@
+.social {
+    text-align: center;
+
+    a {
+        display: inline-block;
+        margin: 0px 20px 20px 20px;
+
+        svg {
+            width: 32px;
+            height: 32px;
+            opacity: 0.8;
+        }
+
+        &:hover svg {
+            opacity: 1;
+        }
+    }
+
+    a.button {
+        margin: 0 0 20px 0;
+    }
+
+    .break {
+        font-size: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        a {
+            margin: 0px 40px 40px 40px;
+
+            svg {
+                width: 64px;
+                height: 64px;
+            }
+        }
+
+        a.button {
+            margin: 0 0 40px 0;
+        }
+    }
+
+    &__facebook {
+        .logo {
+            fill: #363636;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+        }
+
+        .background {
+            fill: transparent;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+        }
+
+        &:hover {
+            .logo {
+                fill: #3c5a99;
+            }
+
+            .background {
+                fill: white;
+            }
+        }
+    }
+
+    &__github {
+        .logo {
+            fill: #363636;
+            fill-opacity: 1;
+            fill-rule: evenodd;
+            stroke: none;
+        }
+
+        .background {
+            fill: transparent;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+        }
+
+        &:hover {
+            .logo {
+                fill: #1b1817;
+            }
+            
+            .background {
+                fill: white;
+            }
+        }
+    }
+
+    &__linkedin {
+        .logo {
+            fill: #363636;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+            stroke: none;
+        }
+
+        .background {
+            fill: transparent;
+            fill-opacity: 1;
+            fill-rule: nonzero;
+        }
+
+        &:hover {
+            .logo {
+                fill: #0977b6;
+            }
+            
+            .background {
+                fill: white;
+            }
+        }
+    }
+}

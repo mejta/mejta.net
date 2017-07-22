@@ -1,0 +1,102 @@
+.header {
+    display: none;
+
+    &__item {
+        padding: 0 20px;
+        text-decoration: none;
+
+        &--developer {
+            background-color: $color-turquoise;
+            color: $color-white;
+
+            h1 {
+                color: $color-yellow;
+            }
+        }
+
+        &--manager {
+            background-color: $color-yellow;
+            color: $color-grey;
+
+            h1 {
+                color: $color-violet;
+            }
+        }
+
+        &--developer:hover {
+            background-color: darken($color-turquoise, 10%);
+        }
+
+        &--manager:hover {
+            background-color: darken($color-yellow, 20%);
+        }
+    }
+
+    @include screen-min(xs) {
+        @include position(absolute, -1px, 0px, auto, auto);
+        @include rotate(90deg, 100vh, 50px);
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+
+        &__item {
+            text-align: center;
+            flex: 1 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-size: 1em;
+                font-weight: 900;
+            }
+
+            p {
+                display: none;
+            }
+        }
+    }
+
+    @include screen-min(sm) {
+        @include position(absolute, 0px, 0px, auto, auto);
+        transform: none;
+        margin: 0;
+        min-height: 100%;
+        flex-flow: column nowrap;
+        width: 250px;
+
+        &__item {
+            margin: auto;
+            display: flex;
+            flex: 1 100%;
+            text-align: center;
+            h1 {
+                font-size: 1.5em;
+                font-weight: 900;
+            }
+
+            p {
+                display: block;
+                font-size: 1em;
+            }
+        }
+    }
+
+    @include screen-min(lg) {
+        width: 50%;
+
+        &__item {
+            flex: 1 100%;
+            width: 100%;
+            h1 {
+                font-size: 2.5em;
+                font-weight: 900;
+            }
+
+            p {
+                font-size: 1.5em;
+            }
+        }
+    }
+}

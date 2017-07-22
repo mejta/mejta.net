@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Maitree:400,700|Raleway:200,400,700,900&subset=latin-ext');
+@import "~normalize.css";
+
+@import "variables";
+@import "mixins";
+
+@import "layout";
+@import "navigation";
+@import "lang";
+@import "lead";
+@import "header";
+@import "developer";
+@import "manager";
+@import "contact";
+@import "map";
+@import "form";
+@import "social";
+@import "button";
+@import "footer";
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: $font-default;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+    font-weight: bold;
+}
+
+a {
+    color: $color-violet;
+}
+
+#app {
+    height: 100%;
+}
+
+.grecaptcha-badge {
+    display: none;
+}

@@ -1,0 +1,130 @@
+.developer {
+    background-color: $color-turquoise;
+    color: $color-white;
+    padding: 60px 30px;
+
+    &__column-header {
+        margin: 0 0 60px 0;
+    }
+
+    &__description {
+        font-size: 1.2em;
+        line-height: 180%;
+
+        h2 {
+            color: $color-yellow;
+            font-size: 2.5em;
+            line-height: 120%;
+            font-weight: 900;
+        }
+    }
+
+    &__qualities {
+        h3 {
+            color: $color-white;
+            font-weight: lighter;
+            font-size: 2.5em;
+        }
+
+        h4 {
+            color: $color-violet;
+            font-weight: 200;
+            font-size: 2.5em;
+            margin: 0 0 30px 0;
+        }
+
+        p {
+            font-size: 1em;
+            margin: 0 0 30px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0px 0;
+
+            li {
+                display: block;
+            }
+        }
+    }
+
+    .social {
+        padding: 30px 0 30px 0;
+        display: block;
+        text-align: center;
+    }
+
+    &__references {
+        clear: both;
+
+        h3 {
+            color: $color-yellow;
+        }
+    }
+
+    @include screen-min(xs) {
+        padding: 100px 60px;
+    }
+
+    @include screen-min(sm) {
+        display: flex;
+        flex-flow: row nowrap;
+
+        &__description, &__qualities {
+            flex: 1 100%;
+        }
+
+        &__description {
+            padding-right: 50px;
+
+            p {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 3em;
+            }
+        }
+
+        &__qualities {
+            padding-left: 50px;
+        }
+
+        &__column-header {
+            height: 200px;
+            padding: 0;
+            margin: 0 0 100px 0;
+            display: flex;
+            align-items: flex-end;
+
+            h2, h3 {
+                margin: 0;
+            }
+        }
+
+        .social {
+            padding: 100px 0 100px 0;
+        }
+    }
+
+    @include screen-min(md) {
+        padding: 100px 130px;
+    }
+
+    @include screen-min(lg) {
+        &__qualities ul {
+            display: flex;
+            flex-flow: row wrap;
+            margin: -20px -40px 0 -40px;
+
+            li {
+                width: 50%;
+                padding: 20px 40px;
+            }
+        }
+    }
+}

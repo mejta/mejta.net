@@ -1,0 +1,52 @@
+@mixin offscreen {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+
+$screens: ( xs: 480px, sm: 750px, md: 1024px, lg: 1200px, xl: 1400px );
+
+@mixin screen($size) {
+    @include screen-min($size) { @content; };
+}
+
+@mixin screen-min($size) {
+    @if map-has-key($screens, $size) {
+        @media (min-width: map-get($screens, $size)) { @content; }
+    } @else {
+        @media (min-width: $size) { @content; }
+    }
+}
+
+@mixin screen-max($size) {
+    @if map-has-key($screens, $size) {
+        @media (max-width: map-get($screens, $size) - 1) { @content; }
+    } @else {
+        @media (max-width: $size - 1) { @content; }
+    }
+}
+
+@mixin position($type, $top, $right, $bottom, $left) {
+    position: $type;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin transition {
+    transition: 0.25s ease;
+}
+
+@mixin rotate($angle, $width, $height) {
+    width: $width;
+    height: $height;
+    margin: calc(#{$height} / -2 + #{$width} / 2) calc(#{$width} / -2 + #{$height} / 2);
+    transform: rotate(90deg);
+}

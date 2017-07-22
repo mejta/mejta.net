@@ -1,0 +1,103 @@
+.manager {
+    padding: 30px;
+    background-color: $color-yellow;
+
+    h2 {
+        color: $color-violet;
+        font-size: 2.5em;
+        line-height: 120%;
+        font-weight: 900;
+    }
+
+    &__description {
+        p {
+            display: block;
+            margin: 0 0 30px 0;
+            font-size: 1.25em;
+            line-height: 180%;
+        }
+    }
+
+    &__references {
+        margin-bottom: 70px;
+        
+        h3 {
+            font-size: 2em;
+            font-weight: 200;
+            margin: 70px 0;
+        }
+
+        h4 {
+            color: $color-violet;
+            font-weight: 900;
+            font-size: 2em;
+            display: block;
+            margin: 0 25px 0 0;
+        }
+
+        span {
+            display: inline-block;
+            font-weight: 200;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            display: block;
+            border-bottom: 1px dashed $color-white;
+            padding: 20px 20px 20px 0;
+        }
+    }
+
+    @include screen-min(xs) {
+        padding: 60px;
+    }
+
+    @include screen-min(sm) {
+        display: flex;
+        flex-flow: row wrap;
+
+        h2 {
+            font-size: 3em;
+        }
+
+        &__description {
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0 -30px;
+
+            p {
+                flex: 1 0;
+                margin: 0 30px;
+            }
+
+            p::before {
+                content: "";
+                background-color: $color-pink;
+                width: 40px;
+                height: 8px;
+                display: block;
+                margin: 70px 0;
+            }
+        }
+
+        &__references {
+            h4 {
+                font-size: 2.5em;
+                display: inline-block;
+            }
+        }
+
+        .social {
+            padding: 70px 0 0 30px;
+        }
+    }
+
+    @include screen-min(md) {
+        padding: 130px;
+    }
+}

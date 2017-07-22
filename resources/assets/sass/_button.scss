@@ -1,0 +1,60 @@
+.button {
+    display: inline-block;
+    border: 3px solid $color-violet;
+    background-color: $color-white;
+    color: $color-violet;
+    font-family: $font-heading;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+
+    &--default {
+        border-color: $color-yellow;
+        background-color: $color-white;
+        color: $color-violet;
+    }
+
+    &--default:hover {
+        background-color: $color-yellow;
+        color: $color-violet;
+    }
+
+    &--turquoise {
+        border-color: $color-white;
+        background-color: $color-turquoise;
+        color: $color-yellow;
+    }
+
+    &--turquoise:hover {
+        background-color: $color-white;
+        color: $color-violet;
+    }
+
+    &--yellow {
+        border-color: $color-white;
+        background-color: $color-yellow;
+        color: $color-violet;
+    }
+
+    &--yellow:hover {
+        background-color: $color-white;
+        color: $color-violet;
+    }
+
+    &:disabled {
+        filter: grayscale(1);
+        cursor: not-allowed;
+    }
+
+    @media screen and (min-width: 1200px) {
+        &--big {
+            padding: 0.68em 0.9em;
+            font-size: 3.125em;
+            white-space: nowrap;
+        }
+    }
+}
