@@ -5,6 +5,12 @@
 
     RewriteEngine On
 
+    Options +FollowSymLinks
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !^www\.mejta\.net$
+    RewriteRule (.*) http://www.mejta.net/$1 [R=301,L]
+
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
