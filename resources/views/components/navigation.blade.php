@@ -15,7 +15,7 @@
     <nav class="navigation__menu" v-navigation="'navigation__toggle'">
         <ul>
             <li class="active">
-                <a href="#top" v-scroll>@lang('web.navigation.home')</a>
+                <a href="#top" v-scroll="100">@lang('web.navigation.home')</a>
             </li>
             <li>
                 <a href="#developer" v-scroll>@lang('web.navigation.developer')</a>

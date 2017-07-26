@@ -10,12 +10,16 @@ const scrollTo = (element, offset) => {
     });
 };
 
-const getAnchor = (paths) => {
-    for(let path in paths) {
-        if(paths[path].localName == 'a') {
-            return paths[path];
+const getAnchor = (element) => {
+    let currentElement = element;
+
+    while(currentElement) {
+        if(currentElement.tagName.toLowerCase() == 'a') {
+            return currentElement;
         }
+        currentElement = currentElement.parentElement;
     }
+    return element;
 }
 
 export function install (Vue, options) {
@@ -25,12 +29,12 @@ export function install (Vue, options) {
     } = options;
 
     Vue.directive(directive, {
-        inserted (el, binding, vnode) {
+        inserted (el, binding, vnode) {                
             el.addEventListener('click', event => {
                 event.preventDefault();
-                const anchor = getAnchor(event.path);
+                const anchor = getAnchor(event.target);
                 const target = document.querySelector(anchor.hash);
-                scrollTo(target, offset);
+                scrollTo(target, typeof binding.value === 'number' ? binding.value : offset);
             });
         }
     });
