@@ -10,6 +10,7 @@ import {
 import {
     Scroll,
     ScrollClass,
+    Navigation,
     Google,
     Axios
 } from './plugins';
@@ -17,6 +18,8 @@ import {
 Vue.use(Scroll, { offset: 60 });
 
 Vue.use(ScrollClass);
+
+Vue.use(Navigation);
 
 Vue.use(Google, {
     recaptcha: process.env.MIX_GOOGLE_RECAPTCHA_SITEKEY,

@@ -12,7 +12,7 @@
             </svg>
         </label>
     </div>
-    <nav class="navigation__menu">
+    <nav class="navigation__menu" v-navigation="'navigation__toggle'">
         <ul>
             <li class="active">
                 <a href="#top" v-scroll>@lang('web.navigation.home')</a>
