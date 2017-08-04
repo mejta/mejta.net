@@ -7,14 +7,22 @@
     "watch-poll": "npm run watch -- --watch-poll",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "clear": "php artisan config:clear;php artisan cache:clear;php artisan view:clear;php artisan route:clear;php artisan clear-compiled;",
+    "deploy-production": "npm run clear;node scripts/deploy.js --env=production",
+    "migrate": "php artisan migrate",
+    "docker-up": "docker-compose up -d",
+    "docker-down": "docker-compose down"
   },
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "browser-sync-webpack-plugin": "^1.2.0",
     "cross-env": "^5.0.1",
+    "dotenv": "^4.0.0",
     "laravel-mix": "^1.0",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "ssh2deploy": "^1.0.5",
+    "yargs": "^8.0.2"
   },
   "dependencies": {
     "axios": "^0.16.2",

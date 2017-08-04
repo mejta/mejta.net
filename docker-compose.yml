@@ -18,7 +18,7 @@ services:
         ports:
             - 3306:3306
         volumes:
-            - ./storage/database:/var/lib/mysql
+            - ./.mysql:/var/lib/mysql
     redis:
         image: redis:3.0
     adminer:
