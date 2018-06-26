@@ -16,4 +16,4 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .version()
    .sourceMaps()
    .copyDirectory('resources/assets/images', 'public/images')
-   .browserSync('localhost');
+   .browserSync('https://www.mejta.test');

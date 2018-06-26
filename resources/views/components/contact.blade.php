@@ -53,13 +53,18 @@
         <h2>@lang('web.contact.visit-me')</h2>
         <div class="contact__address">
             <address>
-                Karolíny Světlé 12<br>
-                100 00 Praha 1<br>
+                <strong>URBAN PLAN HUB</strong><br>
+                Opletalova 1417/25<br>
+                110 00 Praha 1 - Nové Město<br>
                 Czechia
             </address>
             <address>
-                Vršovické náměstí 3<br>
-                101 00 Praha 10<br>
+                <strong>Daniel Mejta</strong><br>
+                IČ: 86592378<br>
+                DIČ: CZ8308180023<br>
+                <br>
+                Františka Diviše 1438/54R<br>
+                104 00 Praha 10 - Uhříněves<br>
                 Czechia
             </address>
         </div>

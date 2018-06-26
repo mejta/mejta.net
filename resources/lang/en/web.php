@@ -7,7 +7,7 @@ function p(array $strings) {
 }
 
 return [
-    'copyright' => '&copy; 2017 Daniel Mejta',
+    'copyright' => '&copy; 2018 Daniel Mejta',
     'get-in-touch' => 'Get in touch',
     'lead' => [
         'text' => 'I’m your #1 contact if you want to create an awesome website or web application. From project management through development to marketing campaigns in cooperation with other great freelancers.',
@@ -66,7 +66,7 @@ return [
     'manager' => [
         'heading' => 'Agile Project Manager',
         'text' => p([
-            'I help people to make projects successful. In last 4 years, as a Scrum Master or Project manager, I\'ve done many projects for small and big companies from marketing, commerce, IT or financial sector. I\'m Certified Scrum Professional.',
+            'I help people to make projects successful. In last 5 years, as a Scrum Master or Project manager, I\'ve done many projects for small and big companies from marketing, commerce, IT or financial sector. I\'m Certified Scrum Professional.',
             'With many project behind I can help you specify your needs and requirements, prepare project methodology that fits your project, coordinate people and be a liaison between business, developers and other parties.',
             'My focus is on efficiency (you want to get as much as possible for your money), transparency (you will see every day what\'s done), and priority (most important things with most value first). All of that leads to great product.',
         ]),
@@ -74,19 +74,19 @@ return [
             'heading' => 'Companies I worked for:',
             '4finance' => [
                 'name' => '4finance',
-                'position' => 'Scrum Master',
+                'position' => 'Scrum Master (2016 - 2017)',
             ],
             'r2development' => [
                 'name' => 'R2 Development',
-                'position' => 'Scrum Master',
+                'position' => 'Scrum Master (2015 - 2016)',
             ],
             'socialbakers' => [
                 'name' => 'Socialbakers',
-                'position' => 'Scrum Master',
+                'position' => 'Scrum Master (2012 - 2015)',
             ],
             'adineo' => [
                 'name' => 'Adineo',
-                'position' => 'Head of Development',
+                'position' => 'Head of Development (2011 - 2012)',
             ],
         ],
     ],

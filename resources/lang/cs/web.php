@@ -7,7 +7,7 @@ function p(array $strings) {
 }
 
 return [
-    'copyright' => '&copy; 2017 Daniel Mejta',
+    'copyright' => '&copy; 2018 Daniel Mejta',
     'get-in-touch' => 'Kontaktujte mě',
     'navigation' => [
         'home' => 'Home',
@@ -32,7 +32,7 @@ return [
     'developer' => [
         'heading' => 'Web developer',
         'text' => p([
-            'Jsem <strong>full stack web developer</strong> s více než 15 lety zkušeností. Ovládám Javascript, Node.js, CSS, PHP a používám React.js, Vue.js, jQuery, Bootstrap, Laravel, Wordpress, OctoberCMS a spoustu dalších technologií.',
+            'Jsem <strong>full stack web developer</strong> s více než 15 lety zkušeností. Ovládám Javascript, Node.js, CSS, PHP a používám React.js, Vue.js, jQuery, Bootstrap, Laravel, Wordpress a spoustu dalších technologií.',
             'Web development není jen o technologiích a vytváření webů.',
         ]),
         'qualities' => [
@@ -74,19 +74,19 @@ return [
             'heading' => 'Reference',
             '4finance' => [
                 'name' => '4finance',
-                'position' => 'Scrum Master',
+                'position' => 'Scrum Master (2016 - 2017)',
             ],
             'r2development' => [
                 'name' => 'R2 Development',
-                'position' => 'Scrum Master',
+                'position' => 'Scrum Master (2015 - 2016)',
             ],
             'socialbakers' => [
                 'name' => 'Socialbakers',
-                'position' => 'Scrum Master',
+                'position' => 'Scrum Master (2012 - 2015)',
             ],
             'adineo' => [
                 'name' => 'Adineo',
-                'position' => 'Vedoucí oddělení vývoje',
+                'position' => 'Vedoucí oddělení vývoje (2011 - 2012)',
             ],
         ],
     ],
