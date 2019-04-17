@@ -1,9 +1,9 @@
 <div class="map">
     <gmap :zoom="11">
-        <gmap-marker :position="{lat:50.083532,lng:14.431734}" :opened="true">
-            <strong>URBAN PLAN HUB</strong><br>
-            Opletalova 1417/25<br>
-            110 00 Nové Město<br>
+        <gmap-marker :position="{lat:50.072751,lng:14.446215}" :opened="true">
+            <strong>SVĚT—HUB</strong><br>
+            Slovenská 21<br>
+            110 00 Praha 2<br>
         </gmap-marker>
         <gmap-marker :position="{lat:50.032366,lng:14.588070}" :opened="false">
             <strong>Daniel Mejta</strong><br>

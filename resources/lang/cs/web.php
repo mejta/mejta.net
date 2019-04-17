@@ -7,7 +7,7 @@ function p(array $strings) {
 }
 
 return [
-    'copyright' => '&copy; 2018 Daniel Mejta',
+    'copyright' => '&copy; ' . date('Y') . ' Daniel Mejta',
     'get-in-touch' => 'Kontaktujte mě',
     'navigation' => [
         'home' => 'Home',
@@ -32,7 +32,7 @@ return [
     'developer' => [
         'heading' => 'Web developer',
         'text' => p([
-            'Jsem <strong>full stack web developer</strong> s více než 15 lety zkušeností. Ovládám Javascript, Node.js, CSS, PHP a používám React.js, Vue.js, jQuery, Bootstrap, Laravel, Wordpress a spoustu dalších technologií.',
+            'Jsem <strong>full stack web developer</strong> s více než 16 lety zkušeností. Pro webové aplikace používám React.js, pro vaše webové stránky WordPress.',
             'Web development není jen o technologiích a vytváření webů.',
         ]),
         'qualities' => [

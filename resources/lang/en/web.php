@@ -7,7 +7,7 @@ function p(array $strings) {
 }
 
 return [
-    'copyright' => '&copy; 2018 Daniel Mejta',
+    'copyright' => '&copy; ' . date('Y') . ' Daniel Mejta',
     'get-in-touch' => 'Get in touch',
     'lead' => [
         'text' => 'I’m your #1 contact if you want to create an awesome website or web application. From project management through development to marketing campaigns in cooperation with other great freelancers.',
@@ -32,7 +32,7 @@ return [
     'developer' => [
         'heading' => 'Full stack web developer',
         'text' => p([
-            'I’m web developer with 15 years of experience. My languages are Javascript, Node.JS, CSS, PHP and my tools are React.js, jQuery, Bootstrap, Laravel, Wordpress, OctoberCMS, and many others. I’m pretty much geek and I love technologies.',
+            'I’m web developer with 15 years of experience. For your web application I use React.js, for your web presentations WordPress. I’m pretty much geek and I love technologies.',
             'Web development is not only about technologies, and making websites.',
         ]),
         'qualities' => [

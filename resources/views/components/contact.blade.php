@@ -53,9 +53,9 @@
         <h2>@lang('web.contact.visit-me')</h2>
         <div class="contact__address">
             <address>
-                <strong>URBAN PLAN HUB</strong><br>
-                Opletalova 1417/25<br>
-                110 00 Praha 1 - Nové Město<br>
+                <strong>SVĚT—HUB</strong><br>
+                Slovenská 21<br>
+                120 00 Praha 2<br>
                 Czechia
             </address>
             <address>
